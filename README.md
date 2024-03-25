@@ -81,6 +81,7 @@ To use the neural network implementation, follow the instructions in the reposit
 # Principal Component Analysis (PCA) Implementation
 
 Principal Component Analysis (PCA) is a dimensionality reduction technique commonly used in machine learning and data analysis. It helps in reducing the number of features in a dataset while preserving the essential information. In this section, we'll discuss the implementation of PCA using Python, both with and without the use of the `sklearn` library.
+![download](https://github.com/RehamJamal13/fundamental-of-ML/assets/102676168/d6971be9-8f0d-4457-adb2-2ab88df471a4)
 
 ## Introduction to PCA
 
