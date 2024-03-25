@@ -63,3 +63,65 @@ b2 = b2 - alpha * db2
 
 To use the neural network implementation, follow the instructions in the repository's documentation.
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Principal Component Analysis (PCA) Implementation
+
+Principal Component Analysis (PCA) is a dimensionality reduction technique commonly used in machine learning and data analysis. It helps in reducing the number of features in a dataset while preserving the essential information. In this section, we'll discuss the implementation of PCA using Python, both with and without the use of the `sklearn` library.
+
+## Introduction to PCA
+
+PCA is a statistical method that transforms high-dimensional data into a lower-dimensional form by identifying the principal components of variation in the data. These principal components are orthogonal vectors that capture the maximum variance in the dataset.
+
+## Implementation Steps
+
+### 1. Standardization
+
+Before applying PCA, it's essential to standardize the data by subtracting the mean and dividing by the standard deviation of each feature. This step ensures that all features have a similar scale.
+
+### 2. Computing the Covariance Matrix
+
+Next, we compute the covariance matrix of the standardized data. The covariance matrix provides information about the relationships between different features in the dataset.
+
+### 3. Eigendecomposition
+
+We then perform eigendecomposition on the covariance matrix to find its eigenvalues and eigenvectors. These eigenvalues represent the amount of variance captured by each principal component, while the eigenvectors represent the directions of maximum variance.
+
+### 4. Choosing the Number of Components
+
+We choose the number of principal components based on various criteria, such as the explained variance or Kaiser's rule.
+
+### 5. Projecting the Data
+
+Finally, we project the original data onto the subspace spanned by the selected principal components to obtain the lower-dimensional representation of the dataset.
+
+## PCA Implementation with Python
+
+We provide a Python implementation of PCA using both manual coding and the `sklearn` library. The manual implementation covers the essential steps of PCA, including standardization, covariance matrix computation, eigendecomposition, and data projection. On the other hand, the `sklearn` implementation offers a convenient way to perform PCA with minimal code.
+
+### Manual PCA Implementation
+
+We define a custom PCA class that encapsulates the essential PCA methods, such as fitting the model to data and transforming the data onto the principal components subspace. The class implements standardization, covariance matrix computation, eigendecomposition, and data projection functionalities.
+
+### PCA with sklearn
+
+We also demonstrate how to perform PCA using the `sklearn.decomposition.PCA` class. This class provides a high-level interface for performing PCA, allowing us to fit the model to data and transform the data in just a few lines of code.
+
+## Conclusion
+
+PCA is a powerful technique for dimensionality reduction and data visualization. By identifying the principal components of variation in a dataset, PCA enables us to extract meaningful insights and reduce computational complexity. Whether implemented manually or using libraries like `sklearn`, PCA remains a valuable tool in the data scientist's toolkit.
+
+
