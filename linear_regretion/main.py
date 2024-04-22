@@ -6,4 +6,4 @@ from model import Linearregretion
 Xtrain, ytrain = generate_data()
 model = Linearregretion()
 
-model.fit(Xtrain, ytrain)
+model.train_batch_gradient_descent(Xtrain, ytrain)
