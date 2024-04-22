@@ -31,10 +31,10 @@ class Linearregretion:
         N, D = X.shape
         self.theta = self.initialize_theta(D)
         losses = []
-        for epoch in range(num_epochs): # Do some iterations
-            ypred = self.linear_function(X,)# make predictions with current parameters
-            loss = mean_squared_error(y, ypred)# Compute mean squared error
-            grads = self.batch_gradient(X, y,)# compute gradients of loss wrt parameters
+        for epoch in range(num_epochs): 
+            ypred = self.linear_function(X,)
+            loss = mean_squared_error(y, ypred)
+            grads = self.batch_gradient(X, y,)
             self.update_function(grads)
             losses.append(loss)
             print(f"\nEpoch {epoch}, loss {loss}")
